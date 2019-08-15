@@ -11,7 +11,7 @@ namespace Cards
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new ViewUno());
         }
 
         protected override void OnStart()

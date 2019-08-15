@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using PanCardView.iOS;
 using UIKit;
 
 namespace Cards.iOS
@@ -24,7 +25,7 @@ namespace Cards.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
+            CardsViewRenderer.Preserve();
             return base.FinishedLaunching(app, options);
         }
     }
